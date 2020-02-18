@@ -1,0 +1,39 @@
+.sidebar {
+  background-color: #042235;
+  height: 100%;
+  width: 80px;
+  position: fixed;
+  margin: 0;
+}
+.sidebar-element,
+.sidebar-brand {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+.sidebar-element.active {
+  background-color: #2995da;
+}
+.sidebar-element.active > svg path {
+  opacity: 1;
+}
+.sidebar-element:hover {
+  background-color: #9999f3;
+}
+.sidebar-element:hover > svg path {
+  opacity: 0.8;
+}
+.sidebar-element svg,
+.sidebar-brand svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sidebar-help {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}

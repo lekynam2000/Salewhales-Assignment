@@ -1,0 +1,157 @@
+.content {
+  margin-top: 42px;
+  margin-left: 120px;
+  background-color: #fff;
+  margin-right: 300px;
+}
+.content-header {
+  display: flex;
+  border-bottom: 1px solid #efefef;
+  height: 67px;
+  margin-bottom: 20px;
+}
+.content-header-title {
+  font-size: 18px;
+  line-height: 67px;
+  vertical-align: middle;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  width: 150px;
+  font-weight: 600;
+}
+.content-header-status {
+  margin-left: auto;
+  font-size: 14px;
+  line-height: 67px;
+  width: 200px;
+  font-family: 'Montserrat', sans-serif;
+  vertical-align: middle;
+  color: #7f7f7f;
+}
+div.content-body {
+  padding-left: 27px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+div.content-body-team {
+  width: 30%;
+  border: 1px solid #e4e7ec;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-top: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+div.content-body-team:hover {
+  box-shadow: 10px 14px 15px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+}
+div.content-body-team-head {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+div.content-body-team-avatar {
+  width: 36px;
+  height: 36px;
+  border: 1px solid black;
+  margin-right: 8px;
+}
+div.content-body-team-name {
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+div.content-body-team-date {
+  font-size: 13px;
+  line-height: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: #7f7f7f;
+}
+div.content-body-team-favorite {
+  margin-left: auto;
+}
+/* div.content-body-team-desc {
+    height: 34px;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  } */
+div.content-body-team-desc {
+  overflow: hidden;
+  /* for set '...' in absolute position */
+  position: relative;
+
+  font-size: 12px;
+  line-height: 16px;
+  font-family: 'Montserrat', sans-serif;
+
+  max-height: 32px;
+  /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: justify;
+  /* place for '...' */
+  margin-right: 10px;
+  padding-right: 1em;
+  margin-bottom: 10px;
+}
+/* create the ... */
+div.content-body-team-desc:before {
+  /* points in the end */
+  content: '...';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of block */
+  right: 0;
+  bottom: 0;
+}
+/* hide ... if we have text, which is less than or equal to max lines */
+div.content-body-team-desc:after {
+  /* points in the end */
+  content: '';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of text */
+  right: 0;
+  /* set width and height */
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  /* bg color = bg color under block */
+  background: white;
+}
+div.content-body-team-footer {
+  border-top: 1px solid #e4e7ec;
+  margin-left: -10px;
+  margin-right: -10px;
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+div.content-body-team-footer > div > div {
+  float: left;
+}
+div.content-body-team-campaign {
+  padding-left: 10px;
+  margin-right: 15px;
+}
+
+div.content-body-team-campaign-logo {
+  margin-right: 5px;
+}
+div.content-body-team-lead-logo {
+  margin-right: 5px;
+}
+div.content-body-team-campaign-text,
+div.content-body-team-lead-text {
+  font-size: 13px;
+  line-height: 16px;
+  opacity: 0.45;
+  font-family: 'Montserrat', sans-serif;
+}
